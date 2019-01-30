@@ -13,11 +13,13 @@ Complete the function getIssuer() that will use the values shown below to determ
 | VISA       | 4                    | 13 or 16      |
 
 ## Examples
-`getIssuer(4111111111111111) == "VISA"`
-`getIssuer(4111111111111) == "VISA"`
-`getIssuer(4012888888881881) == "VISA"`
-`getIssuer(378282246310005) == "AMEX"`
-`getIssuer(6011111111111117) == "Discover"`
-`getIssuer(5105105105105100) == "Mastercard"`
-`getIssuer(5105105105105106) == "Mastercard"`
-`getIssuer(9111111111111111) == "Unknown"`
+```
+getIssuer(4111111111111111) == "VISA"
+getIssuer(4111111111111) == "VISA"
+getIssuer(4012888888881881) == "VISA"
+getIssuer(378282246310005) == "AMEX"
+getIssuer(6011111111111117) == "Discover"
+getIssuer(5105105105105100) == "Mastercard"
+getIssuer(5105105105105106) == "Mastercard"
+getIssuer(9111111111111111) == "Unknown"
+```
