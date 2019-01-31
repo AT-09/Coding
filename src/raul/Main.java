@@ -45,6 +45,7 @@ public class Main {
 
     private static boolean isCardVisa(String stringNum){
         int digfirst = Integer.parseInt(stringNum.substring(0,1));
+        stringNum.charAt(0);
         return digfirst == 4;
 
     }
