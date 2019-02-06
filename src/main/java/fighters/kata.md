@@ -19,3 +19,9 @@ public class Fighter {
   }
 }
 ```
+# TDD!
+Main purpose of this practice is to apply TDD (Test Driven Development).
+- Write tests to validate expected behavior
+- Write class signature(s) without functionality, just to make tests code compile
+- Run tests, they should fail
+- Write class implementation until all tests pass
