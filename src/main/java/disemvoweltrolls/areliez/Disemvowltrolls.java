@@ -11,10 +11,10 @@ public class Disemvowltrolls {
 
     private static String removedVowels(String sentence, int position) {
         String stringResult = "";
-        for (int i=0;i<= sentence.length();i++) {
-            char character = sentence.charAt(i);
+        for (int i=0;i < sentence.length();i++) {
+            String character = String.valueOf(sentence.charAt(i));
             if (isVowel(character)) {
-                stringResult= stringResult + sentence.replace(character,'+');
+                stringResult= stringResult;// + sentence.replace(character,'+');
             }
             else {
                 stringResult = stringResult + character;
@@ -22,9 +22,20 @@ public class Disemvowltrolls {
         }return stringResult;
     }
 
-    private static boolean isVowel(char character) {
-        if (character == 'a' || character == 'A');
+    private static boolean isVowel(String character) {
+        String vowelA = "A";
+        String vowela = "a";
+        String vowele = "e";
+        String vowelE = "E";
+        String voweli = "i";
+        String vowelI = "I";
+        String vowelO = "O";
+        String vowelo = "o";
+        String vowelU = "U";
+        String vowelu = "u";
+        if (character.equals(vowelA) || character.equals(vowela) || character.equals(vowelE)) {
         return true;
+        } else return false;
     }
 
 

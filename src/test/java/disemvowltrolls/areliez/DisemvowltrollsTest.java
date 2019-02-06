@@ -8,6 +8,6 @@ public class DisemvowltrollsTest {
 
     @Test
     public void testOne() {
-        Assert.assertEquals(Disemvowltrolls.removedVowels("Hola mundo"),"Hla mnd");
+        Assert.assertEquals(Disemvowltrolls.removedVowels("This website is for losers LOL!"),"Ths wbst s fr lsrs LL!");
     }
 }
