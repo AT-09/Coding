@@ -1,3 +1,4 @@
+package creditcardissuer.areliez;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

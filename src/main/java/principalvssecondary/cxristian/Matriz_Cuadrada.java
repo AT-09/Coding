@@ -1,3 +1,5 @@
+package principalvssecondary.cxristian;
+
 import java.util.Scanner;
 
 public class Matriz_Cuadrada {

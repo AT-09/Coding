@@ -1,3 +1,5 @@
+package principalvssecondary.regis;
+
 import java.util.Scanner;
 
 /*

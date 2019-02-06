@@ -1,3 +1,5 @@
+package creditcardissuer.jose;
+
 public class CreditCardIssuer {
 
     public static void main(String[] args) {
