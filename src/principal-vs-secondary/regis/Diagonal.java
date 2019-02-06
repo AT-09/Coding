@@ -1,6 +1,15 @@
 import java.util.Random;
+
+/*
+    The Diagonal class creates a matrix with random numbers, print matrix and give us
+    a message of the diagonal that wins.
+ */
 public class Diagonal {
 
+    /*
+    MatrixRandom
+    It creates a matrix with random numbers, it accepts a number which is size of the matrix
+     */
     public int [][] matrixRandom(int side){
         int [][] matrix = new int [side][side];
         Random numRand =  new Random();
@@ -12,49 +21,34 @@ public class Diagonal {
         return matrix;
     }
 
-    public int addDiagonalMain(int [][] matrix){
-        int result = 0;
+    /*
+    messageDiagonalWin
+    It gives an answer of what diagonal is bigger or if they are equal
+     */
+    public String messageDiagonalWin(int [][] matrix){
+        int mainResult = 0;
+        int secondaryResult = 0;
         for (int x = 0; x < matrix.length; x++) {
             for (int y = 0; y < matrix.length; y++) {
                 if(x == y){
-                    result = result + matrix[x][y];
+                    mainResult = mainResult + matrix[x][y];
                 }
-            }
-        }
-        System.out.println("Diagonal Main: " + result);
-        return result;
-    }
-
-    public int addDiagonalSecondary(int [][] matrix){
-        int result = 0;
-        for (int x = 0; x < matrix.length; x++) {
-            for (int y = 0; y < matrix.length; y++) {
                 int temp = x + y;
                 if(temp == matrix.length-1){
-                    result = result + matrix[x][y];
+                    secondaryResult = secondaryResult + matrix[x][y];
                 }
             }
         }
-        System.out.println("Diagonal Secondary: " + result);
-        return result;
+
+        return mainResult > secondaryResult ? "Principal Diagonal win" : secondaryResult > mainResult ? "Secondary Diagonal Win" : "Draw";
     }
 
-    public void messageWinner(int resultMain , int resultSecondary){
-        String message;
-        if (resultMain  >  resultSecondary) {
-            message = "Principal Diagonal win!";
-        }
-        else {
-            message = "Secondary Diagonal win!";
-        }
-        if(resultMain  == resultSecondary){
-            message = "Draw!";
-        }
-        System.out.println(message);
-        //return message;
-    }
+    /*
+    printMatrix
+    Just print every element of the matrix
+     */
 
-    public void print_matrix(int[][] matrix){
+    public void printMatrix(int[][] matrix){
         for (int [] x: matrix) {
             System.out.println(" ");
             for (int y: x) {
