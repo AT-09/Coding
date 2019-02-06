@@ -41,7 +41,6 @@ public class Main {
         }
         return namecard;
     }
-
     private static boolean isCardVisa(String stringNum) {
 
         int digfirst = Character.getNumericValue(stringNum.charAt(0));
@@ -61,7 +60,6 @@ public class Main {
         int digfirsts = Integer.parseInt(stringNum.substring(0, 4));
         return digfirsts == 6011;
     }
-
     private static void printWhoVendor(String numberCar, String vendor) {
         System.out.println("This numer of card: " + numberCar + " is the bank: " + vendor);
     }
