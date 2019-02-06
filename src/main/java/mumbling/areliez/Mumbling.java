@@ -9,11 +9,10 @@ public class Mumbling {
             String character = String.valueOf(word.charAt(i));
             String guion = "-";
             int numberLeter = i++;
-            String newWord =
-                    accum(character, numberLeter, guion);
+			ini = ini + accum(character, numberLeter, guion);
+            String newWord = ini;
         }
-        // return what?
-        return null;
+        return newWord;
     }
 
     private String accum(String character, int numberLeter, String guion) {
