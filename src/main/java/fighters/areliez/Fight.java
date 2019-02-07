@@ -12,4 +12,12 @@ public class Fight {
         return winerName;
     }
 
+    public static void startFigth(Fighter figtherOne, Fighter fighterTwo) {
+        attakToFigther(fighterTwo,figtherOne);
+        attakToFigther(figtherOne,fighterTwo);
+    }
+
+    private static void attakToFigther(Fighter victim, Fighter attacker) {
+        victim.health = victim.health - attacker.damagePerAttack;
+    }
 }

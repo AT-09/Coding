@@ -11,6 +11,7 @@ public class FighterTest {
     public void testShowWinerName() {
         Fighter one = new Fighter("Paty", 30, 3);
         Fighter two = new Fighter("Miguel", 20, 5);
+        Fight.startFigth(one,two);
         Assert.assertEquals(Fight.declaretWinner(one, two), "Paty");
     }
 }
