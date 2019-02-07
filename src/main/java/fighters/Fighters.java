@@ -4,8 +4,8 @@
  * winner
  */
 public class Fighters {
-    public String name;
-    public int health, damagePerAttack;
+    private String name;
+    private int health, damagePerAttack;
     public Fighters(String name, int health, int damagePerAttack) {
         this.name = name;
         this.health = health;
