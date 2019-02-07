@@ -1,7 +1,7 @@
 /**
  * Fighters
  * The purpose of this class is create fighters and establishes what of them is the
- * winner
+ * winner 
  */
 public class Fighters {
     private String name;
